@@ -19,9 +19,13 @@ function SelectInput(props) {
                     className="form-control">
                     <option value="" />
                     {props.data.map(v => {
-                        return <option value={v.authoId}>{v.author}</option>
+                        return <option id={v.id}
+                            value={v.id}>
+                            {v.name}
+                        </option>
                     })}
                 </select>
+                {props.error && <div className="alert alert-danger">{props.error}</div>}
             </div>
         </div>
     );

@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 
 function CourseList(props) {
     return (
-
-        <table className='table'>
-            <thead>
-                <tr><td>Title</td>
-                    <td>Author Id</td>
-                    <td>Category</td>
+        <table className='table table-striped table-hover'>
+            <thead className='table-active'>
+                <tr><th >Title</th>
+                    <th>Author Id</th>
+                    <th>Category</th>
                 </tr>
             </thead>
             <tbody>
